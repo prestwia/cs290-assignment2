@@ -1,3 +1,189 @@
 /*
  * Add your CSS styles to this file.
  */
+ html, body {
+   height: 100%;
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+   font-family: Roboto, sans-serif;
+   background-color: rgb(236,236,236)
+}
+
+h1 a {
+    display: block;
+    margin: 8px 15px;
+    text-decoration: none;
+}
+
+h1 {
+  display: block;
+  box-sizing: content-box;
+  background-color: rgb(53,154,238);
+  color: white;
+  padding-left: 20px;
+}
+
+h1.site-title {
+  font-weight: lighter;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  position: relative;
+  bottom: 20px;
+  background-color: white;
+  height: 40px;
+}
+
+.navlist {
+  height: 2px;
+  background-color:white
+}
+
+.navlist li{
+  display: inline-block;
+}
+
+.navitem.navlink.active a {
+  border-bottom: 3px solid rgb(53,154,238);
+  padding-bottom: 8px;
+}
+
+input {
+  outline: none;
+}
+
+.navitem.navlink a{
+  color: black;
+  position: relative;
+  right: 10px;
+  top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: color 0s;
+}
+
+.navitem.navlink a:hover {
+  color: rgb(53,154,238);
+}
+
+.navitem.navbar-search {
+  position: relative;
+  float: right;
+  right: 30px;
+  top: 8px;
+}
+
+#navbar-search-input {
+  background-color: rgb(236,236,236);
+  color: rgb(139,146,151);
+  border: 1px solid rgb(187,200,202);
+  border-radius: 2px;
+  height: 22px;
+  transition: background-color 0s;
+}
+
+#navbar-search-input:focus {
+  background-color: white;
+}
+
+#navbar-search-button {
+  border: none;
+  background-color: white;
+  position: relative;
+  right: 3px;
+  transition: color 0s;
+}
+
+#navbar-search-button:hover {
+  color: rgb(53,154,238);
+  cursor: pointer;
+}
+
+.twit-container {
+  position: relative;
+  background-color: rgb(236,236,236);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 150px;
+  padding-top: 50px;
+  width: calc(100% - 175px);
+  justify-content: flex-start;
+}
+
+.twit {
+  max-width: 400px;
+  min-width: 350px;
+  background-color: white;
+  border: 1px solid rgb(187,200,202);
+  margin: 2px;
+  padding: 10px;
+  height: 90px;
+  border-radius: 2px;
+  display: flex;
+}
+
+.twit-icon {
+  height: 30px;
+  flex: 1 0 20px;
+  position: relative;
+  top: 15px;
+  left: 10px;
+  font-size: 1.5em;
+}
+
+.twit-content {
+  flex: 5 1 140px;
+}
+
+.twit-text {
+  width: 300px;
+  height: 30px;
+  font-weight: 500;
+}
+
+.twit-author {
+  float: right;
+}
+
+.twit-author a {
+  color: rgb(26,25,28);
+  font-weight: bold;
+  position: relative;
+  right: 15px;
+  bottom: 15px;
+  transition: color 0s;
+}
+
+.twit-author a:hover {
+  color: rgb(53,154,238);
+}
+
+#create-twit-button {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgb(227,30,33);
+  border: none;
+  color: white;
+  font-size: 1.75em;
+  transition: color font-size 0s;
+}
+
+#create-twit-button:hover {
+  background-color: rgb(53,154,238);
+  font-size: 2em;
+  cursor: pointer;;
+}
